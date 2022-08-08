@@ -7,20 +7,33 @@ function App() {
   const [backendData, setBackendData] = useState({}) 
 
   useEffect(() => {
-    fetch("api")
-    .then(res => res.json())
-    .then(data => setBackendData(data))
+    (async () => {
+      const response = await fetch("api")
+      const data = await response.json()
+      setBackendData(data)
+    })()
+    
   },[])
 
-  const {name, tag, townHallLevel} = backendData
-
+  const {
+    name,
+    townHallLevel,
+    trophies,
+    bestTrophies,
+    builderHallLevel,
+    leagueName,
+    mediumIcon,
+    previousTrophies,
+    bestSeasonTrophies,
+    currentTrophies
+  } = backendData;
 
   return (
     <div className="App">
-    {(typeof backendData.tag === "undefined") ? (
+    {(typeof backendData.name === "undefined") ? (
       <p>...loading</p>
     ) : (
-      <p>{name} {tag} {townHallLevel}</p>
+      <p>{name} {townHallLevel} {trophies} {bestTrophies} {builderHallLevel} {leagueName} {mediumIcon} {previousTrophies} {bestSeasonTrophies} {currentTrophies}</p>
     )}
 
     </div>
