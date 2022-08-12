@@ -1,5 +1,6 @@
-
 import { useEffect, useState } from 'react';
+import Header from './components/Header';
+import ApiIntroduction from './components/ApiIntroduction';
 import './App.css';
 
 function App() {
@@ -29,7 +30,16 @@ function App() {
   } = backendData;
 
   return (
+    
     <div className="App">
+    <Header />
+    <ApiIntroduction
+    name={name}
+    townHall={townHallLevel}
+    trophies={trophies}
+    
+     />
+
     {(typeof backendData.name === "undefined") ? (
       <p>...loading</p>
     ) : (

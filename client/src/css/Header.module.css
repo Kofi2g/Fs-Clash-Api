@@ -1,0 +1,11 @@
+.customDiv {
+    height: 90vh;
+    
+}
+
+.img {
+    height: 100%;
+    width: 100%;
+   
+    object-fit: cover;
+}

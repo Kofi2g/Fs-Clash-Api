@@ -1,0 +1,47 @@
+h1 {
+  font-size: clamp(1rem, 1.9368rem + 1.4035vw, 3.5rem);
+}
+
+h2 {
+  font-size: clamp(1rem, 0.7737rem + 2.807vw, 2.5rem);
+}
+
+p {
+  font-size: clamp(1rem, 0.5684rem + 0.7018vw, 1.3rem);
+}
+
+@media screen and (min-width: 300px) {
+  .ApiIntroductionContainer {
+    display: flex;
+    flex-direction: column;
+    margin: 1rem;
+  }
+
+  .imageContainer {
+    display: flex;
+    height: 90vh;
+    margin: -1rem;
+  }
+
+  .image {
+    min-height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  .contentContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .contentHeading {
+    align-self: flex-start;
+  }
+
+  .contentInformation {
+    align-self: flex-start;
+  }
+}
