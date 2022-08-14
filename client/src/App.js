@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import Header from './components/Header';
 import ApiIntroduction from './components/ApiIntroduction';
+import Main from './components/Main';
 import './App.css';
 
 function App() {
@@ -36,15 +37,17 @@ function App() {
     <ApiIntroduction
     name={name}
     townHall={townHallLevel}
-    trophies={trophies}
-    
+    builderHallLevel={builderHallLevel}
      />
-
-    {(typeof backendData.name === "undefined") ? (
-      <p>...loading</p>
-    ) : (
-      <p>{name} {townHallLevel} {trophies} {bestTrophies} {builderHallLevel} {leagueName} {mediumIcon} {previousTrophies} {bestSeasonTrophies} {currentTrophies}</p>
-    )}
+    <Main
+    leagueName={leagueName}
+    trophies={trophies}
+    bestTrophies={bestTrophies}
+    mediumIcon={mediumIcon}
+    previousTrophies={previousTrophies}
+    bestSeasonTrophies={bestSeasonTrophies}
+    currentTrophies={currentTrophies}
+      />
 
     </div>
   );

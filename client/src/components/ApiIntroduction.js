@@ -3,7 +3,7 @@ import styles from "../css/ApiIntroduction.module.css";
 
 const ApiIntroduction = (props) => {
 
-  const {name, townHall, trophies} = props;
+  const {name, townHall, builderHallLevel} = props;
 
   return (
     <div className={styles.ApiIntroductionContainer}>
@@ -17,13 +17,13 @@ const ApiIntroduction = (props) => {
         <div className={styles.contentHeading}>
           <h2>Name</h2>
           <h2>Townhall</h2>
-          <h2>Trophies</h2>
+          <h2>Builder Hall</h2>
         </div>
 
         <div className={styles.contentInformation}>
           <h2>{name}</h2>
           <h2>{townHall}</h2>
-          <h2>{trophies}</h2>
+          <h2>{builderHallLevel}</h2>
         </div>
 
         <div>

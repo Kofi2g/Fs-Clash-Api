@@ -1,0 +1,71 @@
+.h1 {
+    text-align: center;
+}
+
+/* .container {
+    display: flex;
+    flex-direction: row;
+}
+
+.contentContainer {
+    display: flex;
+    flex-direction: row;
+    
+}
+
+.imageContainer {
+    display: flex;
+    flex-direction: column;
+}
+
+.headingInformation {
+    display: flex;
+    flex-direction: row;
+  
+}
+
+.trophyData {
+    display: flex;
+    align-items: flex-end;
+} */
+
+@media screen and (min-width: 300px) {
+    
+    .container {
+        display: flex;
+        flex-direction: column;
+        padding: 1rem;
+    }
+
+    .imageContainer {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+    }
+
+    .imageContainer img {
+        width: 70%;
+    }
+
+    .imageContainer p {
+        color: red;
+    }
+
+}
+
+@media screen and (min-width: 768px) {
+
+}
+
+@media screen and (min-width: 992px) {
+
+}
+
+@media screen and (min-width: 1200px) {
+
+}
+
+@media screen and (min-width: 1400px) {
+
+}
