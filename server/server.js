@@ -16,9 +16,6 @@ app.get("/api", (req, res) => {
     try {
       const response = await axios.get(url, config);
 
-      //name, townhalllvl, trophies, best trophies, builderhall lvl,
-      //  league, name,icon, current/previous/best season trophies
-
       const {
         name,
         townHallLevel,

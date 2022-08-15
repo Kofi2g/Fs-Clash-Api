@@ -12,33 +12,41 @@ const Main = (props) => {
   } = props;
 
   return (
-    <div className={styles.container}>
+    <div>
       <h1 className={styles.h1}>Data Visualized</h1>
-      <div className={styles.contentContainer}>
-        <div className={styles.imageContainer}>
-          <img src={mediumIcon} alt="league-trophy" />
-          <p>{leagueName}</p>
-        </div>
 
-        <div className={styles.headingInformation}>
-          <div>
-            <h2>Trophies</h2>
-            <h2>Best Trophies</h2>
+      <div className={styles.container}>
+        <div className={styles.contentContainer}>
+          <div className={styles.imageContainer}>
+            <img src={mediumIcon} alt="league-trophy" />
+            <p>{leagueName}</p>
           </div>
 
-          <div>
-            <p>{trophies}</p>
-            <p>{bestTrophies}</p>
+          <div className={styles.headingInformation}>
+            <div className={styles.headingTitles}>
+              <p>Trophies</p>
+              <h2>{trophies}</h2>
+            </div>
+
+            <div className={styles.headingData}>
+              <p>Best Trophies</p>
+              <h2>{bestTrophies}</h2>
+            </div>
           </div>
         </div>
-      </div>
 
-      <div className={styles.trophyData}>
-        <h2>{currentTrophies}</h2>
-        <h2>{bestSeasonTrophies}</h2>
-        <h2>{previousTrophies}</h2>
+        <div className={styles.trophyDataContainer}>
+          <div className={styles.trophyData}>
+            <h2>{currentTrophies}</h2>
+            <h2>{bestSeasonTrophies}</h2>
+            <h2>{previousTrophies}</h2>
+          </div>
 
-        <p>information</p>
+          <div className={styles.trophyCaption}>
+            <p>CURRENT BEST PREVIOUS</p>
+          </div>
+          
+        </div>
       </div>
     </div>
   );

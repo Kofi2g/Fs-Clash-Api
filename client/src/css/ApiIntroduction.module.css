@@ -1,9 +1,11 @@
 h1 {
-  font-size: clamp(1rem, 1.9368rem + 1.4035vw, 3.5rem);
+  font-size: clamp(1rem, 1.5368rem + 1.1035vw, 3.5rem);
+  text-transform: uppercase;
+  margin-bottom: 1.5rem;
 }
 
-h2 {
-  font-size: clamp(1rem, 0.7737rem + 2.807vw, 2.5rem);
+.contentContainer h2 {
+  font-size: clamp(1rem, 0.7737rem + 1.807vw, 3rem);
 }
 
 p {
@@ -25,7 +27,6 @@ p {
   }
 
   .image {
-    height: 100%;
     width: 100%;
     object-fit: cover;
   }
@@ -35,22 +36,25 @@ p {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    gap: 1.5rem;
+    gap: .5rem;
   }
 
   .contentHeading {
-    align-self: flex-start;
+    display: flex;
+    gap: .7rem;
+   
   }
 
   .contentInformation {
-    align-self: flex-start;
+    display: flex;
+    gap: 3rem;
+    margin: 1rem 0;
+
   }
 }
 
 @media screen and (min-width: 768px) {
-
-  h1 
-  {
+  h1 {
     align-self: flex-start;
     margin-bottom: 1.5rem;
   }
@@ -58,76 +62,81 @@ p {
   .ApiIntroductionContainer {
     flex-direction: row;
     gap: 2rem;
-    height: 100vh;
-  }
-  
-  .imageContainer {
-    width: 30vw;
     height: 90vh;
+    margin: 0 0 5rem 0;
+  }
+
+  .imageContainer {
+    width: 100%;
     margin: 0;
     position: relative;
+    align-items: center;
   }
 
   .image {
-    width: 70em;
-    position: relative;
-    left: -30em;
-    
-   
+    position: absolute;
+    width: 200%;
+    right: -30%;
   }
 
   .contentContainer {
-  
     justify-content: center;
-    align-items: center;
+    align-items: baseline;
     flex-direction: column;
-    margin-bottom: 2rem;
     gap: 0;
+    width: 100%;
     padding: 1rem;
+    
   }
 
   .contentHeading {
-    display: flex;
-    justify-content: center;
-    gap: 1rem;
+    gap: 3rem;
+    justify-content: flex-start;
+
+  }
+
+  .contentHeading h2 {
+    font-size: clamp(1rem, 0.5737rem + 1.00vw, 2rem);
   }
 
   .contentInformation {
-     display: flex;
-     justify-content: center;
-
-     gap: 1rem;
+    justify-content: flex-start;
+    gap: 3rem;
+    margin: 1rem 0;
+    color: rgb(118, 98, 251);
+    
   }
+
+  .contentInformation h2 {
+    /* margin-left: 1rem; */
+  }
+  
 }
 
 @media screen and (min-width: 992px) {
-
-  .imageContainer {
-    width: 41vw;
-  }
-  
   .image {
-    left: -15em;
-    width: 40em;
+    width: 190%;
+    right: -25%;
+  }
+
+  .contentInformation {
+    gap: 3rem;
+  }
+
+  .p {
+    width: 85%;
   }
 }
 
 @media screen and (min-width: 1200px) {
-  
-  .imageContainer {
-    width: 50vw;
-  }
 
   .image {
-    left: -10em;
-    width: 45em;
+    max-width: 180%;
+    right: -20%;
+  }
+
+  .p {
+    width: 80%;
   }
 }
 
-@media screen and (min-width: 1400px) {
-  
-  .image {
-    left: -14em;
-    width: 60em;
-  }
-}

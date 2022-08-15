@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 import Header from './components/Header';
 import ApiIntroduction from './components/ApiIntroduction';
 import Main from './components/Main';
+import Footer from './components/Footer';
 import './App.css';
 
 function App() {
@@ -48,7 +49,7 @@ function App() {
     bestSeasonTrophies={bestSeasonTrophies}
     currentTrophies={currentTrophies}
       />
-
+  <Footer />
     </div>
   );
 }
