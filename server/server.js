@@ -3,6 +3,7 @@ const express = require("express");
 const axios = require("axios");
 const app = express();
 
+const port = process.env.PORT || 3001;
 const url = "https://api.clashofclans.com/v1/players/%232889v22uq";
 const config = {
   headers: {
@@ -34,7 +35,6 @@ app.get("/api", (req, res) => {
       } = response.data;
 
       res.json({
-
           name,
           townHallLevel,
           trophies,
@@ -54,6 +54,6 @@ app.get("/api", (req, res) => {
   clashReq();
 });
 
-app.listen(5000, () => {
-  console.log("listening on 5k");
+app.listen(port, () => {
+  console.log(`Server running`);
 });

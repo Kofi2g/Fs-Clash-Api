@@ -1,14 +1,18 @@
-import phone from "../phone_clash.png";
+
 import styles from "../css/ApiIntroduction.module.css";
 
 const ApiIntroduction = (props) => {
 
-  const {name, townHall, builderHallLevel} = props;
+  
+
+  const {name, townHall, builderHallLevel, defaultImage} = props;
+
+  
 
   return (
     <div className={styles.ApiIntroductionContainer}>
       <div className={styles.imageContainer}>
-        <img className={styles.image} src={phone} alt="phone_clash_of_clans" />
+        <img className={styles.image} src={defaultImage} alt="phone_clash_of_clans" />
       </div>
 
       <div className={styles.contentContainer}>
