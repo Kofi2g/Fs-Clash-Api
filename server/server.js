@@ -3,7 +3,7 @@ const express = require("express");
 const axios = require("axios");
 const app = express();
 
-const port = process.env.PORT || 3001;
+const PORT = process.env.PORT || 3001;
 const url = "https://api.clashofclans.com/v1/players/%232889v22uq";
 const config = {
   headers: {
@@ -11,6 +11,7 @@ const config = {
     Authorization: `Bearer ${process.env.API_TOKEN}`,
   },
 };
+
 
 app.get("/api", (req, res) => {
   const clashReq = async () => {
@@ -54,6 +55,6 @@ app.get("/api", (req, res) => {
   clashReq();
 });
 
-app.listen(port, () => {
+app.listen(PORT, () => {
   console.log(`Server running`);
 });
