@@ -1,4 +1,4 @@
-import hero from "../hero_clash_wallpaper.jpg";
+import hero from "../images/hero_clash_wallpaper.jpg";
 import styles from "../css/Header.module.css";
 
 const Header = () => {

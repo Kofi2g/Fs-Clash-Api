@@ -8,7 +8,7 @@ p {
 }
 
 .container {
-    background: url(../main_clash_wallpaper.jpg)  center 60%;
+    background: url(../images/main_clash_wallpaper.jpg)  center 60%;
     background-size: cover;
     color: white;
     box-shadow: inset 0 0 30px 1px #000000;
