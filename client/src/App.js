@@ -28,7 +28,6 @@ function App() {
 
      const interval = setInterval(() => {
       const randomPicker = phoneImages[Math.floor(Math.random() * phoneImages.length)]
-      console.log(randomPicker);
       setImage(randomPicker);
       },5000)
       return () => clearInterval(interval);
