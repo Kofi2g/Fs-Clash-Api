@@ -21,7 +21,7 @@ function App() {
 
   useEffect(() => {
     (async () => {
-      const response = await fetch("https://clash-backend.herokuapp.com/")
+      const response = await fetch("https://clash-backend.herokuapp.com/api")
       const data = await response.json()
       setBackendData(data)
     })()
