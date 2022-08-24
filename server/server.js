@@ -21,12 +21,6 @@ const options = {
     url: 'https://clash-backend.herokuapp.com/api',
 };
 
-// 3.250.252.133, 63.32.41.221
-// http://ponsnqq0fgfyfo:i8uw1wk82u9ujwkanqv4ndbxuvq@eu-west-static-05.quotaguard.com:9293
-
-app.use(cors({
-  origin: "3.250.252.133"
-}))
 
 app.get("/api", (req, res) => {
   const clashReq = async () => {
