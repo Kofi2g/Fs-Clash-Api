@@ -25,9 +25,9 @@ const ApiIntroduction = (props) => {
         </div>
 
         <div className={styles.contentInformation}>
-          <h2>{name}</h2>
-          <h2>{townHall}</h2>
-          <h2>{builderHallLevel}</h2>
+          <h2>{typeof name === "undefined" ? "Rhaast" : {name}}</h2>
+          <h2>{typeof townHall === "undefined" ? "14" : {townHall}}</h2>
+          <h2>{typeof builderHallLevel === "undefined" ? "9" : {builderHallLevel}}</h2>
         </div>
 
         <div>
